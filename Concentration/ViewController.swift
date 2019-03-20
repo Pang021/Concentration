@@ -27,13 +27,9 @@ class ViewController: UIViewController {
         flipCount += 1
         if let cardNumber = cardButtons.index(of: sender){
             flipCard(withEmoji: emojiChoices[cardNumber], on: sender)
-        }else{
-            print("chosen card is not cardButtons")
         }
         
-        
     }
-    
     
     func flipCard(withEmoji emoji: String, on button: UIButton){
         if button.currentTitle == emoji {
